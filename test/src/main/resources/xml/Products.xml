@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:products xmlns:tns="http://eatshop.com/products"
+              xsi:schemaLocation="http://eatshop.com/products Products.xsd"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:prod="http://eatshop.com/product">
+    <tns:product id="0">
+        <prod:name>Chicken udon</prod:name>
+        <prod:description>Chicken udon in coconut cream-sauce</prod:description>
+        <prod:composition>udon, chicken fillet, onion, champignons, bell pepper, corn, coconut-creamy sauce, green onion, garlick, ginger</prod:composition>
+        <prod:price>250</prod:price>
+        <prod:weight>0.350</prod:weight>
+        <prod:category>WOK</prod:category>
+    </tns:product>
+
+    <tns:product id="1">
+        <prod:name>Chicken udon 2</prod:name>
+        <prod:description>Chicken udon</prod:description>
+        <prod:composition>udon, chicken fillet, onion, champignons, bell pepper, corn, coconut-creamy sauce, green onion, garlick, ginger</prod:composition>
+        <prod:price>199</prod:price>
+        <prod:weight>0.250</prod:weight>
+        <prod:category>WOK</prod:category>
+    </tns:product>
+
+    <tns:product id="2">
+        <prod:name>Chicken udon 3</prod:name>
+        <prod:description>Chicken udon</prod:description>
+        <prod:composition>udon, chicken fillet, onion, champignons, bell pepper, corn, coconut-creamy sauce, green onion, garlick, ginger</prod:composition>
+        <prod:price>280</prod:price>
+        <prod:weight>0.350</prod:weight>
+        <prod:category>WOK</prod:category>
+    </tns:product>
+</tns:products>
