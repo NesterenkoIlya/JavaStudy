@@ -1,6 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://eatshop/product"
-            elementFormDefault="qualified" xmlns="http://eatshop/product">
+            targetNamespace="http://eatshop.com/product"
+            elementFormDefault="qualified"
+            xmlns="http://eatshop.com/product">
 
     <xsd:element name="product" type="Product"/>
 

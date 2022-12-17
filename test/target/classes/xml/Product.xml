@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product xmlns="http://eatshop/product" xsi:schemaLocation="http://eatshop/product Product.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0">
+<product xmlns="http://eatshop.com/product"
+         xsi:schemaLocation="http://eatshop.com/product Product.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         id="0">
     <name>Chicken udon</name>
-    <description>Chicken udon</description>
+    <description>Chicken udon in coconut cream-sauce</description>
     <composition>udon, chicken fillet, onion, champignons, bell pepper, corn, coconut-creamy sauce, green onion, garlick, ginger</composition>
     <price>250</price>
     <weight>0.350</weight>

@@ -1,0 +1,14 @@
+<xsd:schema elementFormDefault="qualified"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sportshop.com/orders"
+           xmlns:tns="http://sportshop.com/order" xmlns="http://sportshop.com/orders">
+
+    <xsd:import namespace="http://sportshop.com/order" schemaLocation="Order.xsd" />
+
+    <xsd:element name="orders">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="order" type="tns:Order" maxOccurs="unbounded" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
