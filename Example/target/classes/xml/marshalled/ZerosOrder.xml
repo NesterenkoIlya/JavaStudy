@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><orders xmlns="http://sportshop/orders"><order id="0"><order_time>2022-09-09T00:00:00.000+03:00</order_time><order_item>[org.example.sportshop.order.Order$OrderItem@aec6354, org.example.sportshop.order.Order$OrderItem@1c655221]</order_item><customer>org.example.sportshop.customer.Customer@58d25a40</customer></order></orders>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers xmlns="http://sportshop.com/customers"
+           xsi:schemaLocation="http://sportshop.com/customers Customers.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cus="http://sportshop.com/customer">
+    <customer id="0">
+        <cus:name>Jane</cus:name>
+        <cus:second_name></cus:second_name>
+        <cus:surname>Bones</cus:surname>
+        <cus:age>33</cus:age>
+        <cus:email>janebones@gmail.com</cus:email>
+        <cus:password>asdas113_qQQ</cus:password>
+        <cus:registration_date>2019-09-01</cus:registration_date>
+    </customer>
+
+    <customer id="1">
+        <cus:name>Borys</cus:name>
+        <cus:second_name></cus:second_name>
+        <cus:surname>Taylor</cus:surname>
+        <cus:age>54</cus:age>
+        <cus:email>borystaylor@gmail.com</cus:email>
+        <cus:password>asas135ahkk</cus:password>
+        <cus:registration_date>2020-04-11</cus:registration_date>
+    </customer>
+
+    <customer id="2">
+        <cus:name>John</cus:name>
+        <cus:second_name></cus:second_name>
+        <cus:surname>Thomson</cus:surname>
+        <cus:age>54</cus:age>
+        <cus:email>whatever@gmail.com</cus:email>
+        <cus:password>qewqewqe</cus:password>
+        <cus:registration_date>2010-12-22</cus:registration_date>
+    </customer>
+</customers>

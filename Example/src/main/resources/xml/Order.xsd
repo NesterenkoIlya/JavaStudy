@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://sportshop.com/order"
+           xmlns:cus="http://sportshop.com/customer"
+           xmlns:prod="http://sportshop.com/product" xmlns="http://sportshop.com/order">
+
+    <xs:import namespace="http://sportshop.com/customer" schemaLocation="Customer.xsd" />
+    <xs:import namespace="http://sportshop.com/product" schemaLocation="Product.xsd" />
+
+    <xs:element name="order" type="Order"/>
+
+    <xs:complexType name="Order">
+        <xs:sequence>
+            <xs:element name="order_time" type="xs:date"/>
+            <xs:element name="order_item" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="count" type="xs:unsignedShort" />
+                        <xs:element name="product" type="prod:Product" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="customer" type="cus:Customer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+
+
+</xs:schema>
