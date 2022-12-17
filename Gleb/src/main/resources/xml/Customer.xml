@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <tns:customer id="0" xmlns:tns="http://sportshop/customer"
+           xsi:schemaLocation="http://sportshop/customer Customer.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <tns:name>Jane</tns:name>
+        <tns:second_name></tns:second_name>
+        <tns:surname>Bones</tns:surname>
+        <tns:age>33</tns:age>
+        <tns:email>janebones@gmail.com</tns:email>
+        <tns:password>asdas113_qQQ</tns:password>
+        <tns:registration_date>2019-09-01</tns:registration_date>
+</tns:customer>
