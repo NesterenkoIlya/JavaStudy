@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="listOrder.xsl"?>
-<orders xmlns="http://sportshop/orders"
-        xsi:schemaLocation="http://sportshop/orders Orders.xsd"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<tns:orders xmlns:tns="http://sportshop/orders"
+        xsd:schemaLocation="http://sportshop/orders Orders.xsd"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:cus="http://sportshop/customer"
-        xmlns:prod="http://sportshop/product" xmlns:ord="http://sportshop/order">
-    <order id="0">
+        xmlns:prod="http://sportshop/product"
+            xmlns:ord="http://sportshop/order">
+    <tns:order id="0">
         <ord:order_time>2022-09-09</ord:order_time>
         <ord:order_item>
             <ord:count>5</ord:count>
@@ -44,9 +45,9 @@
             <cus:password>asdas113_qQQ</cus:password>
             <cus:registration_date>2019-09-01</cus:registration_date>
         </ord:customer>
-    </order>
+    </tns:order>
 
-    <order id="1">
+    <tns:order id="1">
         <ord:order_time>2022-10-09</ord:order_time>
         <ord:order_item>
             <ord:count>1000</ord:count>
@@ -71,5 +72,5 @@
             <cus:password>asas135ahkk</cus:password>
             <cus:registration_date>2020-04-11</cus:registration_date>
         </ord:customer>
-    </order>
-</orders>
+    </tns:order>
+</tns:orders>

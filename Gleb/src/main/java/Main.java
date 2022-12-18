@@ -44,30 +44,30 @@ public class Main {
     private static void convertXmlToHtml() throws Exception {
         Source xml = new StreamSource("src/main/resources/xml/Orders.xml");
         Source xslt = new StreamSource("src/main/resources/xml/listOrder.xslt");
-        OutputStream resultHtml = new FileOutputStream("src/main/resources/html/orders.html");
+        OutputStream resultHtml = new FileOutputStream("Gleb/src/main/resources/html/orders.html");
         XMLToHTMLConverter converter = new XMLToHTMLConverter();
         converter.convert(xml, xslt, resultHtml);
     }
 
     private static void testSAXParser() throws Exception {
-        Source ordersXml = new StreamSource("src/main/resources/xml/Orders.xml");
+        Source ordersXml = new StreamSource("Gleb/src/main/resources/xml/Orders.xml");
         Schema schema = SchemaFactory
                 .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI)
-                .newSchema(new File("src/main/resources/xml/Orders.xsd"));
+                .newSchema(new File("Gleb/src/main/resources/xml/Orders.xsd"));
         OrdersSAXParser parser = new OrdersSAXParser();
 
-        Orders orders = parser.unmarshal(ordersXml, schema, new FileInputStream("src/main/resources/xml/Orders.xml"));
+        Orders orders = parser.unmarshal(ordersXml, schema, new FileInputStream("Gleb/src/main/resources/xml/Orders.xml"));
         System.out.println(orders.getOrder());
     }
 
     private static void testDOMParser() throws Exception {
-        Source roomsXml = new StreamSource("src/main/resources/xml/Orders.xml");
+        Source roomsXml = new StreamSource("Gleb/src/main/resources/xml/Orders.xml");
         Schema schema = SchemaFactory
                 .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI)
-                .newSchema(new File("src/main/resources/xml/Orders.xsd"));
+                .newSchema(new File("Gleb/src/main/resources/xml/Orders.xsd"));
         OrdersDOMParser parser = new OrdersDOMParser();
 
-        Orders orders = parser.unmarshal(roomsXml, schema, new FileInputStream("src/main/resources/xml/Orders.xml"));
+        Orders orders = parser.unmarshal(roomsXml, schema, new FileInputStream("Gleb/src/main/resources/xml/Orders.xml"));
         System.out.println(orders.getOrder());
 
         List<Order> filteredOrders = orders
@@ -78,14 +78,14 @@ public class Main {
 
         Orders zerosOrder = new Orders();
         zerosOrder.getOrder().addAll(filteredOrders);
-        parser.marshal(zerosOrder, new File("src/main/resources/xml/marshalled/zerosOrder.xml"));
+        parser.marshal(zerosOrder, new File("Gleb/src/main/resources/xml/marshalled/zerosOrder.xml"));
     }
 
     private static void testJAXBParser() throws Exception {
-        Source ordersXml = new StreamSource("src/main/resources/xml/Orders.xml");
+        Source ordersXml = new StreamSource("Gleb/src/main/resources/xml/Orders.xml");
         Schema schema = SchemaFactory
                 .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI)
-                .newSchema(new File("src/main/resources/xml/Orders.xsd"));
+                .newSchema(new File("Gleb/src/main/resources/xml/Orders.xsd"));
         JAXBParser parser = new JAXBParser(ObjectFactory.class);
 
         Orders orders = parser.unmarshal(ordersXml, schema);
@@ -99,15 +99,15 @@ public class Main {
 
         Orders zeroOrder = new Orders();
         zeroOrder.getOrder().addAll(filteredOrder);
-        parser.marshal(zeroOrder, schema, new File("src/main/resources/xml/marshalled/ZerosOrder.xml"));
+        parser.marshal(zeroOrder, schema, new File("Gleb/src/main/resources/xml/marshalled/ZerosOrder.xml"));
     }
 
     private static void validateXml() throws SAXException {
         XMLValidator validator = new XMLValidator();
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("src/main/resources/xml/Orders.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("Gleb/src/main/resources/xml/Orders.xsd"));
 
-        File[] xmlFiles = new File("src/main/resources/xml").listFiles();
+        File[] xmlFiles = new File("Gleb/src/main/resources/xml").listFiles();
         if (xmlFiles != null) {
             Arrays.stream(xmlFiles)
                     .filter(file -> file.getName().endsWith(".xml"))
