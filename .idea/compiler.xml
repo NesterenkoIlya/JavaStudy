@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="untitled1" />
-        <module name="untitled" />
+        <module name="PW1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Examp" target="17" />
       <module name="project" target="1.8" />
       <module name="test" target="1.8" />
+      <module name="untitled" target="17" />
+      <module name="untitled1" target="17" />
       <module name="untitled2" target="17" />
     </bytecodeTargetLevel>
   </component>
