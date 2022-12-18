@@ -1,8 +1,10 @@
 <xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sportshop/orders"
-           xmlns:tns="http://sportshop/order" xmlns="http://sportshop/orders">
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://eatshop.com/orders"
+           xmlns:tns="http://eatshop.com/order"
+           xmlns="http://eatshop.com/orders">
 
-    <xs:import namespace="http://sportshop/order" schemaLocation="Order.xsd" />
+    <xs:import namespace="http://eatshop.com/order" schemaLocation="Order.xsd" />
 
     <xs:element name="orders">
         <xs:complexType>

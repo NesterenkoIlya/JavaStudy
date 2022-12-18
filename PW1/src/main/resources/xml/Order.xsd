@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://eatshop.com/order"
+           xmlns:cus="http://eatshop.com/customer"
+           xmlns:prod="http://eatshop.com/product" xmlns="http://eatshop.com/order">
+
+    <xsd:import namespace="http://eatshop.com/customer" schemaLocation="Customer.xsd" />
+    <xsd:import namespace="http://eatshop.com/product" schemaLocation="Product.xsd" />
+
+    <xsd:element name="order" type="Order"/>
+
+    <xsd:complexType name="Order">
+        <xsd:sequence>
+            <xsd:element name="order_time" type="xsd:date"/>
+            <xsd:element name="order_item" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="count" type="xsd:unsignedShort" />
+                        <xsd:element name="product" type="prod:Product" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="customer" type="cus:Customer"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:unsignedByte" use="required" />
+    </xsd:complexType>
+
+
+</xsd:schema>

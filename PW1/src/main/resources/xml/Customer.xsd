@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://eatshop.com/customer" xmlns="http://eatshop.com/customer">
+
+    <xsd:element name="customer" type="Customer"/>
+
+    <xsd:complexType name="Customer">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" />
+            <xsd:element name="second_name" />
+            <xsd:element name="surname" type="xsd:string" />
+            <xsd:element name="age" type="xsd:unsignedByte" />
+            <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="password" type="xsd:string" />
+            <xsd:element name="registration_date" type="xsd:date" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:unsignedByte" use="required" />
+    </xsd:complexType>
+
+
+</xsd:schema>

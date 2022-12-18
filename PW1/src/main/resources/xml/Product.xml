@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product xmlns="http://eatshop.com/product" xsi:schemaLocation="http://eatshop.com/product Product.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0">
+    <description>Sport Costume</description>
+    <name>Franklin Sports NCAA</name>
+    <supply_date>2022-07-12</supply_date>
+    <price>1000</price>
+    <item_weigth>0.84</item_weigth>
+    <model_year>2010</model_year>
+    <size>One Size</size>
+    <color>Ohio State Buckeyes</color>
+    <rating>5.0</rating>
+</product>
+

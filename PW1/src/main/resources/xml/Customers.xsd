@@ -1,0 +1,16 @@
+<xsd:schema elementFormDefault="qualified"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://eatshop.com/customers"
+            xmlns:tns="http://eatshop.com/customer"
+            xmlns="http://eatshop.com/customers">
+
+    <xsd:import namespace="http://eatshop.com/customer" schemaLocation="Customer.xsd"/>
+
+    <xsd:element name="customers">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customer" type="tns:Customer" maxOccurs="unbounded" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
