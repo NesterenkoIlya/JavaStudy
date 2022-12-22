@@ -1,7 +1,5 @@
 package parsers;
 
-
-
 import validation.XMLValidator;
 
 import javax.xml.bind.JAXBContext;
