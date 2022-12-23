@@ -23,4 +23,28 @@
       <cus:registration_date>2014-09-18</cus:registration_date>
     </ord1:customer>
   </ord:order>
+
+  <ord:order id="7">
+    <ord1:order_time>2008-09-29</ord1:order_time>
+    <!--1 or more repetitions:-->
+    <ord1:order_item>
+      <ord1:count>4</ord1:count>
+      <ord1:product id="7">
+        <prod:name>string</prod:name>
+        <prod:description>string</prod:description>
+        <prod:price>4</prod:price>
+        <prod:dish_weight>1000.00</prod:dish_weight>
+        <prod:category>string</prod:category>
+      </ord1:product>
+    </ord1:order_item>
+    <ord1:customer id="7">
+      <cus:name>string</cus:name>
+      <cus:second_name>string</cus:second_name>
+      <cus:surname>string</cus:surname>
+      <cus:age>16</cus:age>
+      <cus:email>string</cus:email>
+      <cus:password>string</cus:password>
+      <cus:registration_date>2014-09-18</cus:registration_date>
+    </ord1:customer>
+  </ord:order>
 </ord:orders>
