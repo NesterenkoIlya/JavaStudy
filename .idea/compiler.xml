@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="project" />
         <module name="Valera" />
+        <module name="PW1Final" />
         <module name="PW1" />
       </profile>
     </annotationProcessing>

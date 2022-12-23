@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:orders xmlns="http://eatshop.com/order" xmlns:ns2="http://eatshop.com/product" xmlns:ns3="http://eatshop.com/customer" xmlns:ns4="http://eatshop.com/orders"/>

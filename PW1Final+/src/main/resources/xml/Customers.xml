@@ -1,0 +1,12 @@
+<cus:customers xmlns:cus="http://eatshop.com/customers" xmlns:cus1="http://eatshop.com/customer">
+  <!--Zero or more repetitions:-->
+  <cus:customer id="6">
+    <cus1:name>string</cus1:name>
+    <cus1:second_name>string</cus1:second_name>
+    <cus1:surname>string</cus1:surname>
+    <cus1:age>6</cus1:age>
+    <cus1:email>string</cus1:email>
+    <cus1:password>string</cus1:password>
+    <cus1:registration_date>2008-09-29</cus1:registration_date>
+  </cus:customer>
+</cus:customers>

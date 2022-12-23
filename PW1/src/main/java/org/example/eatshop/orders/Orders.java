@@ -6,7 +6,7 @@
 //
 
 
-package eatshop.orders;
+package org.example.eatshop.orders;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import com.eatshop.order.Order;
+import org.example.eatshop.order.Order;
 
 
 /**

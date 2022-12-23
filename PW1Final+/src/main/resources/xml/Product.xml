@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product xmlns="http://eatshop.com/product"
+         xsi:schemaLocation="http://eatshop.com/product Product.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         id="0">
+    <name>Franklin Sports NCAA</name>
+    <description>Sport Costume</description>
+    <price>1000</price>
+    <dish_weight>0.84</dish_weight>
+    <category>Eat</category>
+</product>
+

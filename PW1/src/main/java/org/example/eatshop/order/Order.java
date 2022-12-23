@@ -6,7 +6,7 @@
 //
 
 
-package eatshop.order;
+package org.example.eatshop.order;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-import eatshop.customer.Customer;
-import eatshop.product.Product;
+import org.example.eatshop.customer.Customer;
+import org.example.eatshop.product.Product;
 
 
 /**
@@ -66,12 +66,16 @@ public class Order {
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar orderTime;
     @XmlElement(name = "order_item", required = true)
-    protected List<Order.OrderItem> orderItem;
+    protected List<Order.OrderItem> orderItem = new ArrayList();
     @XmlElement(required = true)
     protected Customer customer;
     @XmlAttribute(name = "id", required = true)
     @XmlSchemaType(name = "unsignedByte")
     protected short id;
+
+    public void addOrderItemListElement(Order.OrderItem elem){
+        orderItem.add(elem);
+    }
 
     /**
      * Gets the value of the orderTime property.
@@ -81,8 +85,8 @@ public class Order {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public XMLGregorianCalendar getOrderTime() {
-        return orderTime;
+    public String getOrderTime() {
+        return orderTime  == null ? null : orderTime.toString();
     }
 
     /**
@@ -201,7 +205,7 @@ public class Order {
 
         /**
          * Gets the value of the count property.
-         * 
+         *
          */
         public int getCount() {
             return count;
@@ -209,7 +213,7 @@ public class Order {
 
         /**
          * Sets the value of the count property.
-         * 
+         *
          */
         public void setCount(int value) {
             this.count = value;
@@ -217,11 +221,11 @@ public class Order {
 
         /**
          * Gets the value of the product property.
-         * 
+         *
          * @return
          *     possible object is
          *     {@link Product }
-         *     
+         *
          */
         public Product getProduct() {
             return product;
@@ -229,11 +233,11 @@ public class Order {
 
         /**
          * Sets the value of the product property.
-         * 
+         *
          * @param value
          *     allowed object is
          *     {@link Product }
-         *     
+         *
          */
         public void setProduct(Product value) {
             this.product = value;

@@ -74,9 +74,9 @@ public class OrdersSAXParser extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
         current = localName;
-            if(qName.equalsIgnoreCase("orders")){
+            if(qName.equalsIgnoreCase("tns:orders")){
                 orders = new Orders();}
-            if(qName.equalsIgnoreCase("order")){
+            if(qName.equalsIgnoreCase("tns:order")){
                 order = new Order();
                 order.setId((short) Integer.parseInt(attributes.getValue("id")));}
             if(qName.equalsIgnoreCase("ord:order_item")) {

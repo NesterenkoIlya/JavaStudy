@@ -6,7 +6,7 @@
 //
 
 
-package eatshop.product;
+package org.example.eatshop.product;
 
 import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
