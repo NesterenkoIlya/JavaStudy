@@ -1,9 +1,0 @@
-<cus:customer id="6" xmlns:cus="http://eatshop.com/customer">
-  <cus:name>string</cus:name>
-  <cus:second_name>string</cus:second_name>
-  <cus:surname>string</cus:surname>
-  <cus:age>6</cus:age>
-  <cus:email>string</cus:email>
-  <cus:password>string</cus:password>
-  <cus:registration_date>2008-09-29</cus:registration_date>
-</cus:customer>
