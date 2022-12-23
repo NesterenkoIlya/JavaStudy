@@ -1,9 +1,9 @@
 import org.xml.sax.SAXException;
 import parsers.JAXBParser;
 import validation.XMLValidator;
-import org.example.eatshop.order.Order;
-import org.example.eatshop.orders.ObjectFactory;
-import org.example.eatshop.orders.Orders;
+//import org.example.eatshop.order.Order;
+//import org.example.eatshop.orders.ObjectFactory;
+//import org.example.eatshop.orders.Orders;
 
 import javax.xml.XMLConstants;
 import javax.xml.transform.Source;
@@ -46,9 +46,9 @@ public class Main {
     private static void validateXml() throws SAXException {
         XMLValidator validator = new XMLValidator();
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("PW1/src/main/resources/xml/Orders.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("src/main/resources/xml/Orders.xsd"));
 
-        File[] xmlFiles = new File("PW1/src/main/resources/xml").listFiles();
+        File[] xmlFiles = new File("src/main/resources/xml").listFiles();
         if (xmlFiles != null) {
             Arrays.stream(xmlFiles)
                     .filter(file -> file.getName().endsWith(".xml"))
@@ -61,9 +61,9 @@ public class Main {
     }
 
     private static void convertXmlToHtml() throws Exception {
-        Source xml = new StreamSource("PW1/src/main/resources/xml/Orders.xml");
-        Source xslt = new StreamSource("PW1/src/main/resources/xml/listOrder.xslt");
-        OutputStream resultHTML = Files.newOutputStream(Paths.get("PW1/src/main/resources/html/orders.html"));
+        Source xml = new StreamSource("src/main/resources/xml/Orders.xml");
+        Source xslt = new StreamSource("src/main/resources/xml/listOrder.xslt");
+        OutputStream resultHTML = Files.newOutputStream(Paths.get("src/main/resources/html/orders.html"));
         XMLToHTML converter = new XMLToHTML();
         converter.convert(xml, xslt, resultHTML);
     }
@@ -78,10 +78,10 @@ public class Main {
 
     private static void testJAXBParser() throws Exception {
         //TODO
-//        Source ordersXml = new StreamSource("PW1/src/main/resources/xml/Orders.xml");
+//        Source ordersXml = new StreamSource("src/main/resources/xml/Orders.xml");
 //        Schema schema = SchemaFactory
 //                .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI)
-//                .newSchema(new File("PW1/src/main/resources/xml/Orders.xsd"));
+//                .newSchema(new File("src/main/resources/xml/Orders.xsd"));
 //        JAXBParser parser = new JAXBParser(ObjectFactory.class);
 //
 //        Orders orders = parser.unmarshal(ordersXml, schema);
@@ -95,6 +95,6 @@ public class Main {
 //
 //        Orders zeroOrder = new Orders();
 //        zeroOrder.getOrder().addAll(filteredOrder);
-//        parser.marshal(zeroOrder, schema, new File("Gleb/src/main/resources/xml/marshalled/ZerosOrder.xml"));
+//        parser.marshal(zeroOrder, schema, new File("src/main/resources/xml/marshalled/ZerosOrder.xml"));
     }
 }

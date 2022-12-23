@@ -13,6 +13,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Examp" target="17" />
+      <module name="lb1-xmlxsd" target="11" />
+      <module name="LB1V" target="17" />
+      <module name="lb2-parserdemo" target="17" />
       <module name="test" target="1.8" />
       <module name="untitled" target="17" />
       <module name="untitled1" target="17" />
