@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='Games.xsl'?>
+<tns:catalogs
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tns="http://www.nure.ua/entity/Game/"
+	xmlns:substr="http://www.nure.ua/entity/catalogs/"
+	xmlns:pr="http://www.nure.ua/entity/Games/"
+	xsi:schemaLocation="http://www.nure.ua/entity/Games.xsd ">
+	
+ <tns:catalog id="1">
+ 	<tns:Games id="1"> 
+ 		<pr:title>GOD OF WAR</pr:title> 
+ 		<pr:description>Рейтинг: 4</pr:description>
+		<pr:category>Экшены</pr:category>
+		<pr:price>2000.00</pr:price>
+ 	</tns:Games>
+ 		<tns:Games id="2"> 
+ 		<pr:title>IXION</pr:title> 
+ 		<pr:description>Рейтинг: 4</pr:description>
+		<pr:category>Экшены</pr:category>
+		<pr:price>3000.00</pr:price>
+ 	</tns:Games>
+ 		<tns:Games id="3"> 
+ 		<pr:title>HELL LET LOOSE</pr:title> 
+ 		<pr:description>Рейтинг: 3</pr:description>
+		<pr:category>Приключения</pr:category>
+		<pr:price>4000.00</pr:price>
+ 	</tns:Souvenirs>
+ 
+ </tns:catalog>
+</tns:catalogs>

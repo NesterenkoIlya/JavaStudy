@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ 	targetNamespace="http://www.nure.ua/entity/Games/"
+ 	xmlns:tns="http://www.nure.ua/entity/Game/"
+ 	xmlns:ent="http://www.nure.ua/entity/"
+ 	xmlns:substr= "http://www.nure.ua/entity/catalog/" 
+	elementFormDefault="qualified">
+	
+	<xsd:import namespace="http://www.nure.ua/entity/" schemaLocation="entity.xsd" />
+	<xsd:import namespace="http://www.nure.ua/entity/Game/" schemaLocation="Game.xsd" />
+	<xsd:import namespace="http://www.nure.ua/entity/catalogs/" schemaLocation="catalogs.xsd"/>
+
+	<xsd:complexType name="catalog"> 
+		<xsd:complexContent> 
+			<xsd:extension base="ent:Entity"> 
+				<xsd:sequence> 
+					<xsd:element name = "Game" type = "tsn:Games" minOccurs = "1" maxOccurs = "100"/>
+					<xsd:element name = "Catalog" type = "substr:Catalog" minOccurs = "1" maxOccurs = "12"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
