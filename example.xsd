@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="email" type="contentType"/>
+  <xs:element name="letter" type="contentType"/>
+
+  <xs:complexType name="contentType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="to"/>
+      <xs:element type="xs:string" name="productName"/>
+      <xs:element type="xs:string" name="amount"/>
+      <xs:element type="xs:string" name="unit"/>
+      <xs:element type="xs:string" name="deliveryTime"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
