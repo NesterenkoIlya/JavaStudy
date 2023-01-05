@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<email>
+Dear <to>Pedro</to>!
+You just purchased <productName>potato</productName> in an amount of
+<amount>5</amount><unit>kg</unit>.
+Item will be delivered by <deliveryTime>6 pm</deliveryTime>.
+</email>
