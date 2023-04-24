@@ -1,0 +1,42 @@
+public class SelectAllDishes 
+{
+	static private Vector<Dish> list;
+	
+	public string getAllDishes()
+	{
+		StringBuilder builder = new StringBuilder();
+		for(Dish dish:list) {
+			dish.builder.append("Book [");
+			if (title != null) {
+				dish.builder.append("title=");
+				dish.builder.append(title);
+				dish.builder.append(", ");
+			}
+			if (desc != null) {
+				dish.builder.append("desc=");
+				dish.builder.append(desc);
+				dish.builder.append(", ");
+			}
+			dish.builder.append("price=");
+			dish.builder.append(price);
+			dish.builder.append(", ");
+			if (category != null) {
+				dish.builder.append("category=");
+				dish.builder.append(category);
+				dish.builder.append(", ");
+			}
+			builder.append("]");
+			return builder.toString();
+		}
+		
+		
+	}
+	
+	private void init()
+	{
+		list = new Vector();
+		list.add(new Dish("Оливье",null, Category.SALAD, 120.0));
+		list.add(new Dish("Мимоза",null, Category.SALAD, 90.0));
+		list.add(new Dish("Роллы филадельфия",null, Category.SYSHI, 350.0));
+	}
+}

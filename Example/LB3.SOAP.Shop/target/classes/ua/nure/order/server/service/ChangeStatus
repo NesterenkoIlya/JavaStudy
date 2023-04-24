@@ -1,0 +1,18 @@
+public class ChangeStatus
+{
+	public string ChangeOrderStatus()
+	{
+		
+		StringBuilder builder = new StringBuilder();
+			builder.append("Order [");
+			builder.append(basket);
+			builder.append(", status");
+			builder.append(status.RESEIVED);			
+			builder.append("]");
+
+		return builder.toString();
+		
+		
+	}
+	
+}
